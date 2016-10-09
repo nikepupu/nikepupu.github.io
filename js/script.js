@@ -1,0 +1,1 @@
+//document.getElementById("myHeader").onclick()= function(){}

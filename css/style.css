@@ -1,0 +1,16 @@
+#myHeader {
+	width: 100%	;
+	height: 100px;
+}
+
+.header{
+	margin: 0;
+	padding: 0;
+}
+
+.subheader{
+	font-size: 25px;
+	font-family: 'Lobster Two' ,serif, times;
+	font-variant-position: left;
+	color: blue;	
+}
