@@ -19,6 +19,10 @@ a {
 	color: blue;	
 }
 
+.slideshow{
+	align: left;
+}
+
 #wholePage {
 
 	background-image: url('../img/skyblue.jpg');
