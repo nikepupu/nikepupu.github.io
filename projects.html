@@ -8,7 +8,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css' />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel= "stylesheet" type="text/css" href="css/style.css" />	
 </head>
 <body>
@@ -64,43 +65,53 @@
 				<p>Due to the confidentiality, I cannot show any thrid party any code of the following two projects.</p>
 				<h4>Datatron-obfuscator </h4>
 				<p> Obfuscator is trying to protect student information. Let's say if the university needs to give part of student information to a department to conduct some analysis, but the university does not want to give away some certain infomation like student IDs. University can use this tool to generate a unique random ID for each entry in that user specified column.</p>
-				<figure>
-					<img src="img/datatron1.png" width=80% > <br>
-					<figcaption>uploading a csv file</figcaption>
-				</figure>
 
-				<figure>
-					<img src="img/datatron2.png" width="80%"> <br>
-					<figcaption>get back key value pairs to look up the original ID</figcaption>
-				</figure>
+				<div>
+					<figure>
+						<img src="img/datatron1.png" width="80%" class="slideshow" style="height:60%" > 
+						<figcaption class="caption"></figcaption>
+					</figure>
 
-				<figure>
-					<img src="img/datatron3.png" width="80%"> <br>
-					<figcaption>the obfuscated file</figcaption>
-				</figure>
-
-				<figure>
-					<img src="img/datatron4.png" width="80%"> <br>
-					<figcaption>webpage</figcaption>
-				</figure>
+					<figure>
+						<img src="img/datatron2.png" width="80%" class="slideshow" style="height:60%" >
+						<figcaption class="caption"></figcaption>
+					</figure>
+					<figure>				
+						<img src="img/datatron3.png" width="80%" class="slideshow" style="height:60%" > 
+						<figcaption class="caption"></figcaption>	
+					</figure>
+					<figure>
+						<img src="img/datatron4.png" width="80%" class="slideshow" style="height:60%" > 
+						<figcaption class="caption"></figcaption>
+					</figure>
+						
+				
+					<a class="w3-btn-floating" style="position:absolute;top:35%;left:-2%" onclick="plusDivs(-1)changeCaption();">❮</a>
+  					<a class="w3-btn-floating" style="position:absolute;top:35%;right:17%" onclick="plusDivs(1);changeCaption();">❯</a>
+				</div>
 
 				<h4> SeeIt color palette feature </h4>
-				<p> The color palette feature guarteens that no matter where you are, as long as you open up the webpage with the same dataset, the graph will identical (colors are not randomly generated). Therefore, instructors and remote students can access the same thing from the same perspective </p>
-				<figure>
-					<img src="img/SeeIt1.png" width="80%">
-					<figcaption>Black and white color palette</figcaption>
-				</figure>
+				<p> The color palette feature guarteens that no matter where you are, as long as you open up the webpage with the same dataset, the graph will be identical (colors are not randomly generated). Therefore, instructors and remote students can access the same thing from the same perspective </p>
 
-				<figure>
-					<img src="img/SeeIt2.png" width="80%">
-					<figcaption>Rainbow color palette</figcaption>
-				</figure>
-
-
-				<figure>
-					<img src="img/SeeIt3.png" width="80%">
-					<figcaption>special color palette for color blindness</figcaption>
-				</figure>
+				<div>
+					<figure>
+						<img src="img/SeeIt1.png" width="80%" class="slideshow2">
+						<figcaption class="caption2"></figcaption>
+					</figure>
+	
+					<figure>
+						<img src="img/SeeIt2.png" width="80%" class="slideshow2">
+						<figcaption class="caption2"></figcaption>
+					</figure>
+	
+	
+					<figure>
+						<img src="img/SeeIt3.png" width="80%" class="slideshow2">
+						<figcaption class="caption2"></figcaption>
+					</figure>
+					<a class="w3-btn-floating" style="position:absolute;top:80%;left:-2%" onclick="plusDivs2(-1);changeCaption2();">❮</a>
+  					<a class="w3-btn-floating" style="position:absolute;top:80%;right:17%" onclick="plusDivs2(1);changeCaption2();">❯</a>
+				</div>
 
 			</div>
 
@@ -118,5 +129,6 @@
 	<!-- bootstrap -->	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
 	<script type="text/javascript" src="js/sidebar.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
