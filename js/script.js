@@ -8,6 +8,8 @@ function reset()
 	slideIndex2 = 1;
 	showDivs(slideIndex);
 	showDivs2(slideIndex2);
+	changeCaption();
+	changeCaption2();
 }
 
 changeCaption();

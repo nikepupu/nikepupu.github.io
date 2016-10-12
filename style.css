@@ -15,9 +15,9 @@ a {
 .subheader{
 	font-size: 25px;
 	font-family: 'Lobster Two' ,times, serif;
+	font-variant-position: left;
 	color: blue;
-	background: transparent;
-	border: transparent;	
+	background-color: transparent;	
 }
 
 #wholePage {
