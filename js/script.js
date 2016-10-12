@@ -55,6 +55,9 @@ function changeCaption()
 				x[i].innerHTML="The obfuscated output file";
 			else if(i == 3)
 				x[i].innerHTML="The web application window";
+
+			x[i].style.color="red";
+		
 		}
 		else
 		{
@@ -79,6 +82,9 @@ function changeCaption2()
 				x[i].innerHTML="Rainbow palette";
 			else if (i == 2)
 				x[i].innerHTML="Color Blindness palette";
+
+			x[i].style.color="red";
+		
 			
 		}
 		else
