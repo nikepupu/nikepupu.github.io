@@ -1,7 +1,14 @@
 var slideIndex = 1;
 var slideIndex2= 1;
-showDivs(slideIndex);
-showDivs2(slideIndex2);
+reset();
+
+function reset()
+{
+	slideIndex = 1;
+	slideIndex2 = 1;
+	showDivs(slideIndex);
+	showDivs2(slideIndex2);
+}
 
 changeCaption();
 changeCaption2();
@@ -16,12 +23,14 @@ function plusDivs(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("slideshow");
+  if (x.length == 0) return;
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++)
   {
      x[i].style.display = "none";
   }
+
   x[slideIndex-1].style.display = "block";
 }
 
@@ -29,6 +38,7 @@ function showDivs(n) {
 function showDivs2(n) {
   var i;
   var x = document.getElementsByClassName("slideshow2");
+  if (x.length==0) return;
   if (n > x.length) {slideIndex2 = 1}
   if (n < 1) {slideIndex2 = x.length}
   for (i = 0; i < x.length; i++)
@@ -42,7 +52,8 @@ function changeCaption()
 {
 
 	var x= document.getElementsByClassName("caption");
-	console.log("hi");
+	if (x.length == 0) return;
+	
 	for (i = 0; i < x.length; i++)
 	{
 		if (i == slideIndex-1 )
@@ -71,6 +82,7 @@ function changeCaption2()
 {
 
 	var x= document.getElementsByClassName("caption2");
+	if (x.length==0) return;
 	
 	for (i = 0; i < x.length; i++)
 	{

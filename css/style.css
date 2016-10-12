@@ -16,7 +16,8 @@ a {
 	font-size: 25px;
 	font-family: 'Lobster Two' ,times, serif;
 	font-variant-position: left;
-	color: blue;	
+	color: blue;
+	background-color: transparent;	
 }
 
 #wholePage {

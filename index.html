@@ -8,7 +8,9 @@
 <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css' />
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
+<!--this two are for slide show-->
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel= "stylesheet" type="text/css" href="css/style.css" />
 <title> Steven Gong's Homepage</title>
 </head>
@@ -28,17 +30,17 @@
 						<span class="navbar-brand" > Ran (Steven) Gong 龚然 </span>
 					</div>
 					<ul class = "nav navbar-nav">
-						<li class = "nav-item active"> <a href='index.html'  class="nav-link subheader" > Home  </a>  </li>
-						<li class="nav-item"> <a href="CV.html" class="nav-link subheader"> CV </a> </li>
-						<li class="nav-item"> <a href="projects.html" class="nav-link subheader"> Projects </a>  </li>
-						<li class="nav-item"> <a href="photos.html" class="nav-link subheader">Photos </a> </li>
+						<li class = "nav-item active"> <button type="button" class="btn subheader" onclick="index()" > Home  </button>  </li>
+						<li class="nav-item"> <button type="button" class="btn subheader" onclick="cv()"> CV </button> </li>
+						<li class="nav-item"> <button type="button" class="btn subheader" onclick="projects()"> Projects </button>  </li>
+						<li class="nav-item"> <button type="button" class="btn subheader" onclick="photos()">Photos </button> </li>
 					</ul>
 				</div>
 		</nav>
 
 
 		<div class="row"> 
-			<div class="col-md-4"> <!--this is the left part of the website  -->
+			<div class="col-md-4" id="sidebar"> <!--this is the left part of the website  -->
 				<img src='img/personalPhoto.jpg' height="150" width="150" class="img-circle" id="introPhoto" > 
 		
 				<p id="briefIntro"> I am currently a 3rd year student majoring in computer science and engineering at University of California,Los Angeles. I like coding, playing table tennis, basketball, StarCraft2 etc. I also participate in <a href="https://icpc.baylor.edu/" target="_blank">ACM-ICPC</a>.  I have interest in artificial intelligence and machine learning as well. </p>
@@ -60,9 +62,7 @@
 
 			</div>	
 
-			<div class="col-md-8"> <!-- content part of the page -->
-			<h3> About Me </h3>
-			<p> I grow up in China. My family moved to Beijing when I was 6 years old. Then we moved back to my hometown Chengdu when I was 12 years old. I attened <a href="https://cdqz.net" target="_blank">Chengdu No.7 High school</a>. The first lady of the United States Michelle Obama visited my high school. (<a href="http://v.youku.com/v_show/id_XNzEzMzM1Njky.html" target="_blank">video</a>) Then I came to the United States. After studying 2 years in <a href="http://www.ucdavis.edu" target="_blank">UC Davis</a> I transferred to UCLA so I can join a group of very talented people to compete in ACM-ICPC.</p>
+			<div class="col-md-8" id="content"> <!-- content part of the page -->
 			</div>
 		</div>
 		
@@ -72,7 +72,7 @@
 	</div> <!-- entire container -->
 	</div> <!-- background photo -->
 
-	<audio loop autoplay controls>
+	<audio loop autoplay >
 		<source src="audio/music1.mp3" type="audio/mpeg">
 		<source src="audio/music2.mp3" type="audio/mpeg">
 		<source src="audio/music3.mp3" type="audio/mpeg">
@@ -82,6 +82,8 @@
 	<!-- bootstrap -->	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
 	<script type="text/javascript" src="js/sidebar.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/pageGenerate.js"></script>
 
 </body>
 
