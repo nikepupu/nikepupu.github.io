@@ -2,13 +2,16 @@ index();
 
 	function index()
 	{
-		$("#content").empty();
-		$("#content").append('<h3>About Me</h3>'+
-				'<p> I grow up in China. My family moved to Beijing when I was 6 years old.'+ 
-				'Then we moved back to my hometown Chengdu when I was 12 years old.' +
-				'I attened <a href="https://cdqz.net" target="_blank">Chengdu No.7 High school</a>.' +
-				'Then I came to the United States. After studying 2 years in <a href="http://www.ucdavis.edu" target="_blank">UC Davis'+
-				'</a> I transferred to UCLA so I can join a group of very talented people to compete in ACM-ICPC.</p>');
+		$("#content").fadeOut(500,
+			function(){
+				$("#content").empty().append('<h3>About Me</h3>'+
+					'<p> I grow up in China. My family moved to Beijing when I was 6 years old.'+ 
+					'Then we moved back to my hometown Chengdu when I was 12 years old.' +
+					'I attened <a href="https://cdqz.net" target="_blank">Chengdu No.7 High school</a>.' +
+					'Then I came to the United States. After studying 2 years in <a href="http://www.ucdavis.edu" target="_blank">UC Davis'+
+					'</a> I transferred to UCLA so I can join a group of very talented people to compete in ACM-ICPC.</p>'
+			).fadeIn(300); 
+	  	} );
 	
 	}
 
@@ -17,8 +20,9 @@ $("#btn_index").click(index);
 $("#btn_CV").click(
 function ()
 {
-	$("#content").empty();
-	$("#content").append(
+	
+	$("#content").fadeOut(500, function(){
+	$("#content").empty().append(
 		'<h3>Education: </h3>' +  
 		'<p><a href="https://www.ucla.edu" target="_blank">University of California, Los Angeles  2016-2018</a> <br>' +
 		'<a href="https://www.ucdavis.edu" target="_blank"> University of California, Davis 2014-2016 </a> <br>'+
@@ -35,30 +39,34 @@ function ()
 		'<h3> Hobbies: </h3>'+
 		'<p>'+
 			'Table Tennis, basketball <br>'+
-			'Starcraft2 <br></p>');
+			'Starcraft2 <br></p>'
+			).fadeIn(300); 
+		});
 });
 
 $("#btn_photos").click(
 function ()
 {
 	
-	$("#content").empty();
-	$('#content').append( '<img class="slideshow" src="img/photo1.jpg" style="width:70%" style="height:60%" >'+
+	$("#content").fadeOut(500, function(){
+	$('#content').empty().append( '<img class="slideshow" src="img/photo1.jpg" style="width:70%" style="height:60%" >'+
 				'<img class="slideshow" src="img/photo2.jpg" style="width:70%" style="height:60%" >'+
 				'<img class="slideshow" src="img/photo3.jpg" style="width:70%" style="height:60%" >'+
 				'<img class="slideshow" src="img/photo4.jpg" style="width:70%" style="height:60%" >'+
 				'<img class="slideshow" src="img/photo5.jpg" style="width:70%" style="height:60%" >'+
 				'<a class="w3-btn-floating" style="position:absolute;top:45%;left:-2%" onclick="plusDivs(-1)">❮</a>'+
-  				'<a class="w3-btn-floating" style="position:absolute;top:45%;right:27%" onclick="plusDivs(1)">❯</a>');
+  				'<a class="w3-btn-floating" style="position:absolute;top:45%;right:27%" onclick="plusDivs(1)">❯</a>'
+  				).fadeIn(300);
 	reset();
+	});
 });
 
 $("#btn_projects").click(
 function ()
 {
-
-	$('#content').empty();
-	$('#content').append('<h3>Projects</h3>'+
+	
+	$('#content').fadeOut(500, function(){
+	$('#content').empty().append('<h3>Projects</h3>'+
 				'<p>Due to confidentiality issues, I cannot show any thrid parties analysisy code of the following two projects.</p>'+
 				'<h4>Datatron-obfuscator </h4>'+
 				'<p> Obfuscator is trying to protect student information. Let\'s say if the university needs to give part of student information to a department to conduct some analysis, but the university does not want to give away some certain infomation like student IDs. University can use this tool to generate a unique random ID for each entry in that user specified column.</p>'+
@@ -101,7 +109,8 @@ function ()
 				'	</figure>'+
 				'	<a class="w3-btn-floating" style="position:absolute;top:80%;left:-2%" onclick="plusDivs2(-1);changeCaption2();">❮</a>'+
   				'	<a class="w3-btn-floating" style="position:absolute;top:80%;right:17%" onclick="plusDivs2(1);changeCaption2();">❯</a>'+
-				'</div>');
+				'</div>').fadeIn(300);
+				reset();
+			});
 
-		reset();
 });
