@@ -1,18 +1,21 @@
 index();
-function index()
-{
-	$("#content").empty();
-	$("#content").append('<h3>About Me</h3>'+
-			'<p> I grow up in China. My family moved to Beijing when I was 6 years old.'+ 
-			'Then we moved back to my hometown Chengdu when I was 12 years old.' +
-			'I attened <a href="https://cdqz.net" target="_blank">Chengdu No.7 High school</a>.' +
-			'Then I came to the United States. After studying 2 years in <a href="http://www.ucdavis.edu" target="_blank">UC Davis'+
-			'</a> I transferred to UCLA so I can join a group of very talented people to compete in ACM-ICPC.</p>');
 
-}
+	function index()
+	{
+		$("#content").empty();
+		$("#content").append('<h3>About Me</h3>'+
+				'<p> I grow up in China. My family moved to Beijing when I was 6 years old.'+ 
+				'Then we moved back to my hometown Chengdu when I was 12 years old.' +
+				'I attened <a href="https://cdqz.net" target="_blank">Chengdu No.7 High school</a>.' +
+				'Then I came to the United States. After studying 2 years in <a href="http://www.ucdavis.edu" target="_blank">UC Davis'+
+				'</a> I transferred to UCLA so I can join a group of very talented people to compete in ACM-ICPC.</p>');
+	
+	}
 
+$("#btn_index").click(index);
 
-function cv()
+$("#btn_CV").click(
+function ()
 {
 	$("#content").empty();
 	$("#content").append(
@@ -33,9 +36,10 @@ function cv()
 		'<p>'+
 			'Table Tennis, basketball <br>'+
 			'Starcraft2 <br></p>');
-}
+});
 
-function photos()
+$("#btn_photos").click(
+function ()
 {
 	
 	$("#content").empty();
@@ -47,9 +51,10 @@ function photos()
 				'<a class="w3-btn-floating" style="position:absolute;top:45%;left:-2%" onclick="plusDivs(-1)">❮</a>'+
   				'<a class="w3-btn-floating" style="position:absolute;top:45%;right:27%" onclick="plusDivs(1)">❯</a>');
 	reset();
-}
+});
 
-function projects()
+$("#btn_projects").click(
+function ()
 {
 
 	$('#content').empty();
@@ -99,4 +104,4 @@ function projects()
 				'</div>');
 
 		reset();
-}
+});
