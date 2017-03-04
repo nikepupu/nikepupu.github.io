@@ -21,22 +21,13 @@ a {
 	border: transparent;	
 }
 
-#wholePage {
-	height : 100%;
+body {
    	background-image: url('../img/skyblue.jpg');
 	background-repeat: no-repeat;
-	background-position: center center;
 	background-size:cover;
-	margin: 0 auto;
-	width : 100%;
-
 }
 
-.row
-{
-	height: 1000px;
-	width: auto; ;
-};
+
 
 #briefIntro {
 	font-family: times, serif;
