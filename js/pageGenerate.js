@@ -9,7 +9,7 @@ index();
 					'Then we moved back to my hometown Chengdu when I was 12 years old.' +
 					'I attened <a href="https://cdqz.net" target="_blank">Chengdu No.7 High school</a>.' +
 					'Then I came to the United States. After studying 2 years in <a href="http://www.ucdavis.edu" target="_blank">UC Davis'+
-					'</a> I transferred to UCLA so I can join a group of very talented people to compete in ACM-ICPC.</p>'
+					'</a> I transferred to UCLA.</p>'
 			).fadeIn(300); 
 	  	} );
 	
