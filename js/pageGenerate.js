@@ -23,12 +23,8 @@ function ()
 	$("#content").fadeOut(500, function(){
 	$("#content").empty().append(
 		`<h3>Education: </h3> 
-			B.S. from UCLA  June 2018
-			M.S from  UCLA September 2018 to present
-		<h3> Hobbies: </h3
-		<p>
-			Table Tennis, basketball <br>
-			Starcraft2 <br></p>`
+			B.S. from UCLA  June 2018 <br>
+			M.S from  UCLA September 2018 to present`
 			).fadeIn(300); 
 		});
 });
