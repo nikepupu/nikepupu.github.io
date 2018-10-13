@@ -8,12 +8,8 @@ function reset()
 	slideIndex2 = 1;
 	showDivs(slideIndex);
 	showDivs2(slideIndex2);
-	changeCaption();
-	changeCaption2();
 }
 
-changeCaption();
-changeCaption2();
 function plusDivs2(n)
 {
 	showDivs2(slideIndex2 += n)
