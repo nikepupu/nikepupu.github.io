@@ -29,28 +29,32 @@ function ()
 
 		<h3> Publication: </h3>
 		<p>
-			VRKitchen: an Interactive 3D Environment for Learning Real Life Cooking Tasks RL4RealLife <br>
-			Xiaofeng Gao, <b>Ran Gong</b>, Tianmin Shu, Xu Xie, Shu Wang, Song-Chun Zhu  <br>
-			ICML workshop on Reinforcement Learning for Real Life (RL4RealLife), 2019 <br>
+		<a href="https://arxiv.org/pdf/2012.14011.pdf" target="_blank" > SMART: A Situation Model for Algebra Story Problems via Attributed Grammar </a> <br>
+		Yining Hong, Qing Li, <b>Ran Gong</b>, Daniel Ciao, Siyuan Huang, Song-Chun Zhu <br>
+		AAAI, 2021
 		</p>
-
+		
 		<p>
-			Joint Mind Modeling for Explanation Generation in Complex Human-Robot Collaborative Tasks  <br>
+			<a href="https://arxiv.org/pdf/2007.12803.pdf" target="_blank">Joint Mind Modeling for Explanation Generation in Complex Human-Robot Collaborative Tasks</a>  <br>
 			Xiaofeng Gao<sup>*</sup>, <b>Ran Gong<sup>*</sup></b>, Yizhou Zhao, Shu Wang, Tianmin Shu, Song-Chun Zhu <br>
 			International Conference on Robot & Human Interactive Communication (RO-MAN), 2020 <br>
 		</p>
 
 		<p>
-		Learning to infer human attention in daily activities <br>
+		<a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320320301187?via%3Dihub" target="_blank" > Learning to infer human attention in daily activities </a> <br>
 		Zhixiong Nan, Tianmin Shu, <b>Ran Gong</b>, Ping Wei, Song-Chun Zhu, Nanning Zheng <br>
 		Pattern Recognition, 2020
 		</p>
 
 		<p>
-		SMART: A Situation Model for Algebra Story Problems via Attributed Grammar <br>
-		Yining Hong, Qing Li, <b>Ran Gong</b>, Daniel Ciao, Siyuan Huang, Song-Chun Zhu <br>
-		AAAI, 2021
+			<a href="https://openreview.net/pdf?id=rygmCx3vjE" target="_blank"> VRKitchen: an Interactive 3D Environment for Learning Real Life Cooking Tasks RL4RealLife </a> <br>
+			Xiaofeng Gao, <b>Ran Gong</b>, Tianmin Shu, Xu Xie, Shu Wang, Song-Chun Zhu  <br>
+			ICML workshop on Reinforcement Learning for Real Life (RL4RealLife), 2019 <br>
 		</p>
+
+
+
+
 
 
 			`
