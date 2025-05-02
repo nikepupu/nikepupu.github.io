@@ -137,7 +137,7 @@
         <div class="container">
             <h1>About</h1>
             <div class="bio-info">
-                <p>  I am a research scientist at  <a href="https://theaiinstitute.com/" target="_blank"> The AI Institute</a>.  I received my PhD from the University of California Los Angeles supervised by professor <a href="https://web.cs.ucla.edu/~dt/" target="_blank">Prof. Demetri Terzopoulos</a> and professor Song-chun Zhu. My research lies in the intersection of Robotics, Computer Vision, Computer Graphics and Machine Learning.
+                <p>  I am a research scientist at  <a href="https://theaiinstitute.com/" target="_blank"> The Robotics and AI Institute</a>.  I received my PhD from the University of California Los Angeles supervised by professor <a href="https://web.cs.ucla.edu/~dt/" target="_blank">Prof. Demetri Terzopoulos</a> and professor Song-chun Zhu. My research lies in the intersection of Robotics, Computer Vision, Computer Graphics and Machine Learning.
                 <p> During my PhD, I also worked closely with <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav" target="_blank">professor Gaurav Sukhatme</a> (USC & Amazon Alexa AI), <a href="https://siyuanhuang.com/" target="_blank"> Dr. Siyuan Huang </a> and <a href="http://tshu.io">Dr. Tianmin Shu</a>. Before that, I obtained a bachelor degree of Computer Science and Engineering at <a href="https://my.ucla.edu/" target="_blank"> UCLA</a></p>
             </div>
 
@@ -169,6 +169,101 @@
                         <div class="contents">
                             <ul class="list-group">
                             	(* indicates equal contribution)
+                            <!-- roboverse -->
+                            <li class="list-group-item">
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-lg-2">
+										<img src="./imgs/roboverse.png" class="img-responsive img-fluid">
+									</div>
+									<div class="col-xs-12 col-sm-8 col-lg-10">
+									<h4 class="list-group-item-heading">RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning </h4>
+									<p class="detail">
+                                    Haoran Geng*, Feishi Wang*, Songlin Wei*, Yuyang Li*, Bangjun Wang*, Boshi An*, Charlie Tianyue Cheng*,
+                                    Haozhe Lou, Peihao Li, Yen-Jen Wang, Yutong Liang, Dylan Goetting, Chaoyi Xu, Haozhe Chen, Yuxi Qian, 
+                                    Yiran Geng, Jiageng Mao, Weikang Wan, Mingtong Zhang, Jiangran Lyu, Siheng Zhao, Jiazhao Zhang, 
+                                    Jialiang Zhang, Chengyang Zhao, Haoran Lu, Yufei Ding, <strong>Ran Gong</strong>, Yuran Wang, Yuxuan Kuang, Ruihai Wu, 
+                                    Baoxiong Jia, Carlo Sferrazza, Hao Dong, Siyuan Huang, Koushil Sreenath, Yue Wang, Jitendra Malik, Pieter Abbeel<br>
+									<em> Robotics: Science and Systems , 2025</em>
+									</p>
+									<button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#roboverse">Abstract</button>
+									<!-- <a class="btn btn-primary btn-xs" role="button" href="https://arxiv.org/pdf/2402.05929.pdf">PDF</a> -->
+									<button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#roboverse-cite">Cite</button>
+									<a class="btn btn-warning btn-xs" role="button" href="https://metadriverse.github.io/urban-sim/">Website</a>
+									</div>
+								</div>
+								<div id="agent-foundation-abs" class="collapse abstract">
+									Data scaling and standardized evaluation benchmarks have driven significant advances in natural language processing and computer vision. 
+                                    However, robotics faces unique challenges in scaling data and establishing reliable evaluation protocols. Collecting real-world robotic data is resource-intensive 
+                                    and inefficient, while benchmarking in real-world scenarios remains highly complex. Synthetic data and simulation offer promising alternatives,
+                                    yet existing efforts often fall short in data quality, diversity, and benchmark standardization. To address these challenges, we introduce ROBOVERSE, 
+                                    a comprehensive framework comprising a simulation platform, a synthetic dataset, and unified benchmarks. 
+                                    Our simulation platform supports multiple simulators and robotic embodiments, enabling seamless transitions between different environments. 
+                                    The synthetic dataset, featuring high-fidelity physics and photorealistic rendering, is constructed through multiple approaches including migration from public datasets, policy rollout, and motion planning, etc.
+                                    enhanced by data augmentation. Additionally, we propose unified benchmarks for imitation learning and reinforcement learning, 
+                                    enabling consistent evaluation across different levels of generalization. At the core of the simulation platform is METASIM, an infrastructure that abstracts diverse simulation environments into a universal interface. 
+                                    It restructures existing simulation environments into a simulator-agnostic configuration system, as well as an API aligning different simulator functionalities, such as launching simulation environments,
+                                    loading assets with initial states, stepping the physics engine, etc. This abstraction ensures interoperability and extensibility. 
+                                    Comprehensive experiments demonstrate that ROBOVERSE enhances the performance of imitation learning, reinforcement learning, and world model learning, improving sim-to-real transfer.
+                                    These results validate the reliability of our dataset and benchmarks, establishing RoboVerse as a robust solution for advancing simulation-assisted robot learning.
+								</div>
+
+								<div id="roboverse-cite" class="collapse abstract">
+									<pre class="citation" align="left">
+                                        @misc{geng2025roboverse,
+                                            title={RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning},
+                                            author={Haoran Geng and Feishi Wang and Songlin Wei and Yuyang Li and Bangjun Wang and Boshi An and Charlie Tianyue Cheng and Haozhe Lou and Peihao Li and Yen-Jen Wang and Yutong Liang and Dylan Goetting and Chaoyi Xu and Haozhe Chen and Yuxi Qian and Yiran Geng and Jiageng Mao and Weikang Wan and Mingtong Zhang and Jiangran Lyu and Siheng Zhao and Jiazhao Zhang and Jialiang Zhang and Chengyang Zhao and Haoran Lu and Yufei Ding and Ran Gong and Yuran Wang and Yuxuan Kuang and Ruihai Wu and Baoxiong Jia and Carlo Sferrazza and Hao Dong and Siyuan Huang and Koushil Sreenath and Yue Wang and Jitendra Malik and Pieter Abbeel}, year={2025},
+                                            primaryClass={cs.RO},
+                                            url={https://roboverse.wiki},
+                                            }
+										</pre>
+								</div>  
+							</li>
+                            <!-- MicroMobility -->
+                            <li class="list-group-item">
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-lg-2">
+										<img src="./imgs/urbansim.jpeg" class="img-responsive img-fluid">
+									</div>
+									<div class="col-xs-12 col-sm-8 col-lg-10">
+									<h4 class="list-group-item-heading">Towards Autonomous Micromobility through Scalable Urban Simulation </h4>
+									<p class="detail">
+									Wayne Wu*, Honglin He*, Chaoyuan Zhang, Jack He, Seth Z. Zhao, <strong>Ran Gong</strong>, Quanyi Li, and Bolei Zhou<br>
+									<em> IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR) <strong style="color: red;">Highlight </strong>, 2025</em>
+									</p>
+									<button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#urbansim">Abstract</button>
+									<!-- <a class="btn btn-primary btn-xs" role="button" href="https://arxiv.org/pdf/2402.05929.pdf">PDF</a> -->
+									<button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#agent-foundation-cite">Cite</button>
+									<a class="btn btn-warning btn-xs" role="button" href="https://metadriverse.github.io/urban-sim/">Website</a>
+									</div>
+								</div>
+								<div id="agent-foundation-abs" class="collapse abstract">
+									Micromobility, which utilizes lightweight mobile machines moving in urban public spaces - such as delivery robots and electric wheelchairs - 
+                                    emerges as a promising alternative to vehicular mobility. Current micromobility depends mostly on human manual operation (in-person or remote control),
+                                    which raises safety and efficiency concerns when navigating busy urban environments full of unpredictable obstacles and pedestrians. 
+                                    Assisting humans with AI agents in maneuvering micromobility devices presents a viable solution for enhancing safety and efficiency. 
+                                    In this work, we present a scalable urban simulation solution to advance autonomous micromobility. First, we build 
+                                    URBAN-SIM - a high-performance robot learning platform for large-scale training of embodied agents in interactive 
+                                    urban scenes. URBAN-SIM contains three critical modules: Hierarchical Urban Generation pipeline, Interactive Dynamics Generation strategy,
+                                    and Asynchronous Scene Sampling scheme, to improve the diversity, realism, and efficiency of robot learning in simulation. Then, we
+                                    propose URBAN-BENCH - a suite of essential tasks and benchmarks to gauge various capabilities of the AI agents
+                                    in achieving autonomous micromobility. URBAN-BENCH includes eight tasks based on three core skills of the agents:
+                                    Urban Locomotion, Urban Navigation, and Urban Traverse. We evaluate four robots with heterogeneous embodiments, 
+                                    such as the wheeled and legged robots, across these tasks. Experiments on diverse terrains and urban
+                                    structures reveal each robot's strengths and limitations.
+								</div>
+
+								<div id="urbansim-cite" class="collapse abstract">
+									<pre class="citation" align="left">
+                                        @ inproceedings{wu2025urbansim,
+                                            title={Towards Autonomous Micromobility through Scalable Urban Simulation},
+                                            author={Wu, Wayne and He, Honglin and Zhang, Chaoyuan and He, Jack and Zhao, Seth Z. and Gong, Ran and Li, Quanyi and Zhou, Bolei},
+                                            booktitle ={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+                                            year={2025}
+                                            }
+										</pre>
+								</div>  
+							</li>
+
                              <!-- AVL -->
 							<li class="list-group-item">
 								<div class="row">
