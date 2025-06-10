@@ -148,7 +148,12 @@
                     <div class="publications-list">
                         <ul class="list-group">
                             (* indicates equal contribution)
-                            <!-- roboverse -->
+
+                            <!-- Robotics & Embodied AI Section -->
+                            <li class="list-group-item">
+                                <h3 class="research-area">Robotics & Embodied AI</h3>
+                            </li>
+                            <!-- roboverse (2025) -->
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-lg-2">
@@ -198,7 +203,7 @@
                                 </div>
                             </li>
 
-                            <!-- MicroMobility -->
+                            <!-- UrbanSim (2025) -->
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-lg-2">
@@ -242,7 +247,7 @@
                                 </div>
                             </li>
 
-                            <!-- AVL -->
+                            <!-- Agent Foundation Model (2024) -->
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-lg-2">
@@ -299,7 +304,241 @@
                                 </div>
                             </li>
 
-                            <!-- MindAgent -->
+                            <!-- ARNOLD (2023) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <img src="./imgs/arnold.gif" class="img-responsive img-fluid">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes</h4>
+                                        <p class="detail">
+                                            <strong>Ran Gong</strong>*,
+                                            <a href="https://huangjy-pku.github.io/">Jiangyong Huang*</a>,
+                                            <a href="https://www.zyz.lol/app/aboutme/aboutme.html">Yizhou Zhao</a>,
+                                            <a href="https://geng-haoran.github.io/">Haoran Geng</a>,
+                                            <a href="https://xfgao.github.io/">Xiaofeng Gao</a>, 
+                                            <a href="https://qywu.github.io/">Qingyang Wu</a>,
+                                            <a href="https://wensi-ai.github.io/">Wensi Ai</a>,
+                                            <a href="https://www.linkedin.com/in/josephziheng/">Ziheng Zhou</a>,
+                                            <a href="http://web.cs.ucla.edu/~dt/">Demetri Terzopoulos</a>,
+                                            <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>,
+                                            <a href="https://buzz-beater.github.io/">Baoxiong Jia</a>,
+                                            <a href="https://siyuanhuang.com/">Siyuan Huang</a> <br>
+                                            <em>International Conference on Computer Vision (ICCV), 2023</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#arnold-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://arxiv.org/abs/2304.04321"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#arnold-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                        <a class="btn btn-warning btn-xs" role="button" href="https://arnold-benchmark.github.io/"><i class="fa fa-globe"></i> Website</a>
+                                    </div>
+                                </div>
+                                <div id="arnold-abs" class="collapse abstract">
+                                    Understanding the continuous states of objects is essential for task learning and planning in the real world. However, most existing task learning benchmarks assume discrete(e.g., binary) object goal states, which poses challenges for the learning of complex tasks and transferring learned policy from simulated environments to the real world. Furthermore, state discretization limits a robot's ability to follow human instructions based on the grounding of actions and states. To tackle these challenges, we present ARNOLD, a benchmark that evaluates language-grounded task learning with continuous states in realistic 3D scenes. ARNOLD is comprised of 8 language-conditioned tasks that involve understanding object states and learning policies for continuous goals. To promote language-instructed learning, we provide expert demonstrations with template-generated language descriptions. We assess task performance by utilizing the latest language-conditioned policy learning models. Our results indicate that current models for language-conditioned manipulations continue to experience significant challenges in novel goal-state generalizations, scene generalizations, and object generalizations. These findings highlight the need to develop new algorithms that address this gap and underscore the potential for further research in this area.
+                                </div>
+                                <div id="arnold-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@article{gong2023arnold,
+    title={ARNOLD: A Benchmark for Language-Grounded Task Learning With Continuous States in Realistic 3D Scenes},
+    author={Gong, Ran and Huang, Jiangyong and Zhao, Yizhou and Geng, Haoran and Gao, Xiaofeng and Wu, Qingyang and Ai, Wensi and Zhou, Ziheng and Terzopoulos, Demetri and Zhu, Song-Chun and others},
+    journal={arXiv preprint arXiv:2304.04321},
+    year={2023}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
+                            <!-- LEMMA (2023) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <img src="./imgs/lemma.png" class="img-responsive img-fluid">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">LEMMA: Learning Language-Conditioned Multi-Robot Manipulation</h4>
+                                        <p class="detail">
+                                            <strong>Ran Gong</strong>,
+                                            Xiaofeng Gao, 
+                                            Qiaozi Gao,                                       
+                                            Suhaila Shakiah,
+                                            Govind Thattai,
+                                            Gaurav S. Sukhatme <br>
+                                            <em>IEEE Robotics and Automation Letters (RA-L), 2023</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#lemma-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://xfgao.github.io/paper/RAL2023_LEMMA.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#lemma-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                    </div>
+                                </div>
+                                <div id="lemma-abs" class="collapse abstract">
+                                    Complex manipulation tasks often require robots with complementary capabilities to collaborate. We introduce a benchmark for LanguagE-Conditioned Multi-robot MAnipulation (LEMMA) focused on task allocation and long-horizon object manipulation based on human language instructions in a tabletop setting. LEMMA features 8 types of procedurally generated tasks with varying degree of complexity, some of which require the robots to use tools and pass tools to each other. For each task, we provide 800 expert demonstrations and human instructions for training and evaluations. LEMMA poses greater challenges compared to existing benchmarks, as it requires the system to identify each manipulator's limitations and assign sub-tasks accordingly while also handling strong temporal dependencies in each task. To address these challenges, we propose a modular hierarchical planning approach as a baseline. Our results highlight the potential of LEMMA for developing future language-conditioned multi-robot systems.
+                                </div>
+                                <div id="lemma-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@article{gong2023lemma,
+    title={LEMMA: Learning Language-Conditioned Multi-Robot Manipulation},
+    author={Gong, Ran and Gao, Xiaofeng and Gao, Qiaozi and Shakiah, Suhaila and Thattai, Govind and Sukhatme, Gaurav S},
+    journal={arXiv preprint arXiv:2308.00937},
+    year={2023}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
+                            <!-- DialFRED (2022) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <img src="./imgs/dialfred_intro.png" class="img-responsive img-fluid">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">DialFRED: Dialogue-Enabled Agents for Embodied Instruction Following</h4>
+                                        <p class="detail">
+                                            Xiaofeng Gao, 
+                                            Qiaozi Gao,
+                                            <strong>Ran Gong</strong>,
+                                            Kaixiang Lin,
+                                            Govind Thattai,
+                                            Gaurav S. Sukhatme <br>
+                                            <em>IEEE Robotics and Automation Letters (RA-L), 2022</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#dialfred-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://xfgao.github.io/paper/RAL2022_DialFRED.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#dialfred-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                        <a class="btn btn-warning btn-xs" role="button" href="https://github.com/xfgao/DialFRED"><i class="fa fa-github"></i> Code&Data</a>
+                                    </div>
+                                </div>
+                                <div id="dialfred-abs" class="collapse abstract">
+                                    Language-guided Embodied AI benchmarks requiring an agent to navigate an environment and manipulate objects typically allow one-way communication: the human user gives a natural language command to the agent, and the agent can only follow the command passively. We present DialFRED, a dialogue-enabled embodied instruction following benchmark based on the ALFRED benchmark. DialFRED allows an agent to actively ask questions to the human user; the additional information in the user's response is used by the agent to better complete its task. We release a human-annotated dataset with 53K task-relevant questions and answers and an oracle to answer questions. To solve DialFRED, we propose a questioner-performer framework wherein the questioner is pre-trained with the human-annotated data and fine-tuned with reinforcement learning. We make DialFRED publicly available and encourage researchers to propose and evaluate their solutions to building dialog-enabled embodied agents.
+                                </div>
+                                <div id="dialfred-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@article{gao2022dialfred,
+    title={DialFRED: Dialogue-Enabled Agents for Embodied Instruction Following}, 
+    author={Gao, Xiaofeng and Gao, Qiaozi and Gong, Ran and Lin, Kaixiang and Thattai, Govind and Sukhatme, Gaurav S.},
+    journal={IEEE Robotics and Automation Letters}, 
+    year={2022},
+    volume={7},	
+    pages={10049-10056},
+    doi={10.1109/LRA.2022.3193254}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
+                            <!-- VRKitchen (2019) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <img src="./imgs/dish_fluent_small.gif" class="img-responsive img-fluid">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">VRKitchen: an Interactive 3D Environment for Learning Real Life Cooking Tasks</h4>
+                                        <p class="detail">
+                                            <a href="https://xfgao.github.io/">Xiaofeng Gao</a>, 
+                                            <strong>Ran Gong</strong>,
+                                            <a href="https://tshu.io">Tianmin Shu</a>,
+                                            <a href="https://xuxie1031.github.io/">Xu Xie</a>,
+                                            <a href="https://shuwang0712.github.io/">Shu Wang</a>,
+                                            <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a><br>
+                                            <em>ICML workshop on Reinforcement Learning for Real Life, 2019</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#kitchen-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://xfgao.github.io/paper/Arxiv2019_VRKitchen.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#kitchen-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                        <a class="btn btn-warning btn-xs" role="button" href="https://sites.google.com/view/vr-kitchen/"><i class="fa fa-globe"></i> Website</a> 
+                                    </div>
+                                </div>
+                                <div id="kitchen-abs" class="collapse abstract">
+                                    One of the main challenges of applying reinforcement learning to real world applications is the lack of realistic and standardized environments for training and testing AI agents. In this work, we design and implement a virtual reality (VR) system, VRKitchen, with integrated functions which i) enable embodied agents to perform real life cooking tasks involving a wide range of object manipulations and state changes, and ii) allow human teachers to provide demonstrations for training agents. We also provide standardized evaluation benchmarks and data collection tools to facilitate a broad use in research on learning real life tasks. Video demos, code, and data will be available on the project website: sites.google.com/view/vr-kitchen.
+                                </div>
+                                <div id="kitchen-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@article{gao2019vrkitchen,
+    title={Vrkitchen: an interactive 3d virtual environment for task-oriented learning},
+    author={Gao, Xiaofeng and Gong, Ran and Shu, Tianmin and Xie, Xu and Wang, Shu and Zhu, Song-Chun},
+    journal={arXiv preprint arXiv:1903.05757},
+    year={2019}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
+                            <!-- AI Agents & Gaming Section -->
+                            <li class="list-group-item">
+                                <h3 class="research-area">AI Agents & Gaming</h3>
+                            </li>
+                            <!-- TeamCraft (2024) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <img src="./imgs/teamcraft.gif" class="img-responsive img-fluid">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">TeamCraft: A Benchmark for Multi-Modal Multi-Agent Systems in Minecraft</h4>
+                                        <p class="detail">
+                                            Qian Long,
+                                            Zhi Li,
+                                            <strong>Ran Gong</strong>,
+                                            Ying Nian Wu,
+                                            Demetri Terzopoulos,
+                                            Xiaofeng Gao<br>
+                                            <em>arXiv preprint, 2024</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#teamcraft-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://arxiv.org/pdf/2412.05255.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#teamcraft-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                        <a class="btn btn-warning btn-xs" role="button" href="https://teamcraft-bench.github.io/"><i class="fa fa-globe"></i> Website</a>
+                                    </div>
+                                </div>
+                                <div id="teamcraft-abs" class="collapse abstract">
+                                    Collaboration is a cornerstone of society. In the real world, human teammates make use of multi-sensory data to tackle challenging tasks in ever-changing environments. It is essential for embodied agents collaborating in visually-rich environments replete with dynamic interactions to understand multi-modal observations and task specifications. To evaluate the performance of generalizable multi-modal collaborative agents, we present TeamCraft, a multi-modal multi-agent benchmark built on top of the open-world video game Minecraft. The benchmark features 55,000 task variants specified by multi-modal prompts, procedurally-generated expert demonstrations for imitation learning, and carefully designed protocols to evaluate model generalization capabilities. We also perform extensive analyses to better understand the limitations and strengths of existing approaches. Our results indicate that existing models continue to face significant challenges in generalizing to novel goals, scenes, and unseen numbers of agents. These findings underscore the need for further research in this area.
+                                </div>
+                                <div id="teamcraft-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@article{long2024teamcraft,
+    title={TeamCraft: A Benchmark for Multi-Modal Multi-Agent Systems in Minecraft},
+    author={Long, Qian and Li, Zhi and Gong, Ran and Wu, Ying Nian and Terzopoulos, Demetri and Gao, Xiaofeng},
+    journal={arXiv preprint arXiv:2412.05255},
+    year={2024}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
+                            <!-- Agent AI Survey (2024) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <img src="./imgs/agent_ai_survey.png" class="img-responsive img-fluid">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">Agent AI: Surveying the Horizons of Multimodal Interaction</h4>
+                                        <p class="detail">
+                                            Zane Durante, Qiuyuan Huang, Naoki Wake, <strong>Ran Gong</strong>, Jae Sung Park, Bidipta Sarkar, Rohan Taori, Yusuke Noda, Demetri Terzopoulos, Yejin Choi, Katsushi Ikeuchi, Hoi Vo, Li Fei-Fei, Jianfeng Gao<br>
+                                            <em>arXiv preprint, 2024</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#agent-ai-survey-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://arxiv.org/pdf/2401.03568.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#agent-ai-survey-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                    </div>
+                                </div>
+                                <div id="agent-ai-survey-abs" class="collapse abstract">
+                                    Multi-modal AI systems will likely become a ubiquitous presence in our everyday lives. A promising approach to making these systems more interactive is to embody them as agents within physical and virtual environments. At present, systems leverage existing foundation models as the basic building blocks for the creation of embodied agents. Embedding agents within such environments facilitates the ability of models to process and interpret visual and contextual data, which is critical for the creation of more sophisticated and context-aware AI systems. For example, a system that can perceive user actions, human behavior, environmental objects, audio expressions, and the collective sentiment of a scene can be used to inform and direct agent responses within the given environment. To accelerate research on agent-based multimodal intelligence, we define "Agent AI" as a class of interactive systems that can perceive visual stimuli, language inputs, and other environmentally-grounded data, and can produce meaningful embodied actions. In particular, we explore systems that aim to improve agents based on next-embodied action prediction by incorporating external knowledge, multi-sensory inputs, and human feedback. We argue that by developing agentic AI systems in grounded environments, one can also mitigate the hallucinations of large foundation models and their tendency to generate environmentally incorrect outputs. The emerging field of Agent AI subsumes the broader embodied and agentic aspects of multimodal interactions. Beyond agents acting and interacting in the physical world, we envision a future where people can easily create any virtual reality or simulated scene and interact with agents embodied within the virtual environment.
+                                </div>
+                                <div id="agent-ai-survey-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@article{durante2024agent,
+    title={Agent AI: Surveying the Horizons of Multimodal Interaction},
+    author={Durante, Zane and Huang, Qiuyuan and Wake, Naoki and Gong, Ran and Park, Jae Sung and Sarkar, Bidipta and Taori, Rohan and Noda, Yusuke and Terzopoulos, Demetri and Choi, Yejin and Ikeuchi, Katsushi and Vo, Hoi and Fei-Fei, Li and Gao, Jianfeng},
+    journal={arXiv preprint arXiv:2401.03568},
+    year={2024}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
+                            <!-- MindAgent (2024) -->
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-lg-2">
@@ -360,129 +599,11 @@
                                 </div>
                             </li>
 
-                            <!-- LEMMA -->
+                            <!-- Mathematical Reasoning Section -->
                             <li class="list-group-item">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-4 col-lg-2">
-                                        <img src="./imgs/lemma.png" class="img-responsive img-fluid">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-8 col-lg-10">
-                                        <h4 class="list-group-item-heading">LEMMA: Learning Language-Conditioned Multi-Robot Manipulation</h4>
-                                        <p class="detail">
-                                            <strong>Ran Gong</strong>,
-                                            Xiaofeng Gao, 
-                                            Qiaozi Gao,                                       
-                                            Suhaila Shakiah,
-                                            Govind Thattai,
-                                            Gaurav S. Sukhatme <br>
-                                            <em>IEEE Robotics and Automation Letters (RA-L), 2023</em>
-                                        </p>
-                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#lemma-abs">Abstract</button>
-                                        <a class="btn btn-primary btn-xs" role="button" href="https://xfgao.github.io/paper/RAL2023_LEMMA.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
-                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#lemma-cite"><i class="fa fa-quote-right"></i> Cite</button>
-                                    </div>
-                                </div>
-                                <div id="lemma-abs" class="collapse abstract">
-                                    Complex manipulation tasks often require robots with complementary capabilities to collaborate. We introduce a benchmark for LanguagE-Conditioned Multi-robot MAnipulation (LEMMA) focused on task allocation and long-horizon object manipulation based on human language instructions in a tabletop setting. LEMMA features 8 types of procedurally generated tasks with varying degree of complexity, some of which require the robots to use tools and pass tools to each other. For each task, we provide 800 expert demonstrations and human instructions for training and evaluations. LEMMA poses greater challenges compared to existing benchmarks, as it requires the system to identify each manipulator's limitations and assign sub-tasks accordingly while also handling strong temporal dependencies in each task. To address these challenges, we propose a modular hierarchical planning approach as a baseline. Our results highlight the potential of LEMMA for developing future language-conditioned multi-robot systems.
-                                </div>
-                                <div id="lemma-cite" class="collapse abstract">
-                                    <pre class="citation" align="left">
-@article{gong2023lemma,
-    title={LEMMA: Learning Language-Conditioned Multi-Robot Manipulation},
-    author={Gong, Ran and Gao, Xiaofeng and Gao, Qiaozi and Shakiah, Suhaila and Thattai, Govind and Sukhatme, Gaurav S},
-    journal={arXiv preprint arXiv:2308.00937},
-    year={2023}
-}
-                                    </pre>
-                                </div>
+                                <h3 class="research-area">Mathematical Reasoning & Problem Solving</h3>
                             </li>
-
-                            <!-- ARNOLD -->
-                            <li class="list-group-item">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-4 col-lg-2">
-                                        <img src="./imgs/arnold.gif" class="img-responsive img-fluid">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-8 col-lg-10">
-                                        <h4 class="list-group-item-heading">ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes</h4>
-                                        <p class="detail">
-                                            <strong>Ran Gong</strong>*,
-                                            <a href="https://huangjy-pku.github.io/">Jiangyong Huang*</a>,
-                                            <a href="https://www.zyz.lol/app/aboutme/aboutme.html">Yizhou Zhao</a>,
-                                            <a href="https://geng-haoran.github.io/">Haoran Geng</a>,
-                                            <a href="https://xfgao.github.io/">Xiaofeng Gao</a>, 
-                                            <a href="https://qywu.github.io/">Qingyang Wu</a>,
-                                            <a href="https://wensi-ai.github.io/">Wensi Ai</a>,
-                                            <a href="https://www.linkedin.com/in/josephziheng/">Ziheng Zhou</a>,
-                                            <a href="http://web.cs.ucla.edu/~dt/">Demetri Terzopoulos</a>,
-                                            <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>,
-                                            <a href="https://buzz-beater.github.io/">Baoxiong Jia</a>,
-                                            <a href="https://siyuanhuang.com/">Siyuan Huang</a> <br>
-                                            <em>International Conference on Computer Vision (ICCV), 2023</em>
-                                        </p>
-                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#arnold-abs">Abstract</button>
-                                        <a class="btn btn-primary btn-xs" role="button" href="https://arxiv.org/abs/2304.04321"><i class="fa fa-file-pdf-o"></i> Paper</a>
-                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#arnold-cite"><i class="fa fa-quote-right"></i> Cite</button>
-                                        <a class="btn btn-warning btn-xs" role="button" href="https://arnold-benchmark.github.io/"><i class="fa fa-globe"></i> Website</a>
-                                    </div>
-                                </div>
-                                <div id="arnold-abs" class="collapse abstract">
-                                    Understanding the continuous states of objects is essential for task learning and planning in the real world. However, most existing task learning benchmarks assume discrete(e.g., binary) object goal states, which poses challenges for the learning of complex tasks and transferring learned policy from simulated environments to the real world. Furthermore, state discretization limits a robot's ability to follow human instructions based on the grounding of actions and states. To tackle these challenges, we present ARNOLD, a benchmark that evaluates language-grounded task learning with continuous states in realistic 3D scenes. ARNOLD is comprised of 8 language-conditioned tasks that involve understanding object states and learning policies for continuous goals. To promote language-instructed learning, we provide expert demonstrations with template-generated language descriptions. We assess task performance by utilizing the latest language-conditioned policy learning models. Our results indicate that current models for language-conditioned manipulations continue to experience significant challenges in novel goal-state generalizations, scene generalizations, and object generalizations. These findings highlight the need to develop new algorithms that address this gap and underscore the potential for further research in this area.
-                                </div>
-                                <div id="arnold-cite" class="collapse abstract">
-                                    <pre class="citation" align="left">
-@article{gong2023arnold,
-    title={ARNOLD: A Benchmark for Language-Grounded Task Learning With Continuous States in Realistic 3D Scenes},
-    author={Gong, Ran and Huang, Jiangyong and Zhao, Yizhou and Geng, Haoran and Gao, Xiaofeng and Wu, Qingyang and Ai, Wensi and Zhou, Ziheng and Terzopoulos, Demetri and Zhu, Song-Chun and others},
-    journal={arXiv preprint arXiv:2304.04321},
-    year={2023}
-}
-                                    </pre>
-                                </div>
-                            </li>
-
-                            <!-- DialFRED -->
-                            <li class="list-group-item">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-4 col-lg-2">
-                                        <img src="./imgs/dialfred_intro.png" class="img-responsive img-fluid">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-8 col-lg-10">
-                                        <h4 class="list-group-item-heading">DialFRED: Dialogue-Enabled Agents for Embodied Instruction Following</h4>
-                                        <p class="detail">
-                                            Xiaofeng Gao, 
-                                            Qiaozi Gao,
-                                            <strong>Ran Gong</strong>,
-                                            Kaixiang Lin,
-                                            Govind Thattai,
-                                            Gaurav S. Sukhatme <br>
-                                            <em>IEEE Robotics and Automation Letters (RA-L), 2022</em>
-                                        </p>
-                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#dialfred-abs">Abstract</button>
-                                        <a class="btn btn-primary btn-xs" role="button" href="https://xfgao.github.io/paper/RAL2022_DialFRED.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
-                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#dialfred-cite"><i class="fa fa-quote-right"></i> Cite</button>
-                                        <a class="btn btn-warning btn-xs" role="button" href="https://github.com/xfgao/DialFRED"><i class="fa fa-github"></i> Code&Data</a>
-                                    </div>
-                                </div>
-                                <div id="dialfred-abs" class="collapse abstract">
-                                    Language-guided Embodied AI benchmarks requiring an agent to navigate an environment and manipulate objects typically allow one-way communication: the human user gives a natural language command to the agent, and the agent can only follow the command passively. We present DialFRED, a dialogue-enabled embodied instruction following benchmark based on the ALFRED benchmark. DialFRED allows an agent to actively ask questions to the human user; the additional information in the user's response is used by the agent to better complete its task. We release a human-annotated dataset with 53K task-relevant questions and answers and an oracle to answer questions. To solve DialFRED, we propose a questioner-performer framework wherein the questioner is pre-trained with the human-annotated data and fine-tuned with reinforcement learning. We make DialFRED publicly available and encourage researchers to propose and evaluate their solutions to building dialog-enabled embodied agents.
-                                </div>
-                                <div id="dialfred-cite" class="collapse abstract">
-                                    <pre class="citation" align="left">
-@article{gao2022dialfred,
-    title={DialFRED: Dialogue-Enabled Agents for Embodied Instruction Following}, 
-    author={Gao, Xiaofeng and Gao, Qiaozi and Gong, Ran and Lin, Kaixiang and Thattai, Govind and Sukhatme, Gaurav S.},
-    journal={IEEE Robotics and Automation Letters}, 
-    year={2022},
-    volume={7},	
-    pages={10049-10056},
-    doi={10.1109/LRA.2022.3193254}
-}
-                                    </pre>
-                                </div>
-                            </li>
-
-                            <!-- Inter-GPS -->
+                            <!-- Inter-GPS (2021) -->
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-lg-2">
@@ -507,7 +628,7 @@
                                     </div>
                                 </div>
                                 <div id="intergps-abs" class="collapse abstract">
-                                    Geometry problem solving has attracted much attention in the NLP community recently. The task is challenging as it requires abstract problem understanding and symbolic reasoning with axiomatic knowledge. However, current datasets are either small in scale or not publicly available. Thus, we construct a new largescale benchmark, Geometry3K, consisting of 3,002 geometry problems with dense annotation in formal language. We further propose a novel geometry solving approach with formal language and symbolic reasoning, called Interpretable Geometry Problem Solver (InterGPS). Inter-GPS first parses the problem text and diagram into formal language automatically via rule-based text parsing and neural object detecting, respectively. Unlike implicit learning in existing methods, Inter-GPS incorporates theorem knowledge as conditional rules and performs symbolic reasoning step by step. Also, a theorem predictor is designed to infer the theorem application sequence fed to the symbolic solver for the more efficient and reasonable searching path. Extensive experiments on the Geometry3K and GEOS datasets demonstrate that Inter-GPS achieves significant improvements over existing methods.
+                                    Geometry problem solving has attracted much attention in the NLP community recently. The task is challenging as it requires abstract problem understanding and symbolic reasoning with axiomatic knowledge. However, current datasets are either small in scale or not publicly available. Thus, we construct a new largescale benchmark, Geometry3K, consisting of 3,002 geometry problems with dense annotation in formal language. We further propose a novel geometry solving approach with formal language and symbolic reasoning, called Interpretable Geometry Problem Solver (Inter-GPS). Inter-GPS first parses the problem text and diagram into formal language automatically via rule-based text parsing and neural object detecting, respectively. Unlike implicit learning in existing methods, Inter-GPS incorporates theorem knowledge as conditional rules and performs symbolic reasoning step by step. Also, a theorem predictor is designed to infer the theorem application sequence fed to the symbolic solver for the more efficient and reasonable searching path. Extensive experiments on the Geometry3K and GEOS datasets demonstrate that Inter-GPS achieves significant improvements over existing methods.
                                 </div>
                                 <div id="intergps-cite" class="collapse abstract">
                                     <pre class="citation" align="left">
@@ -521,7 +642,7 @@
                                 </div>
                             </li>
 
-                            <!-- SMART -->
+                            <!-- SMART (2021) -->
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-lg-2">
@@ -559,48 +680,11 @@
                                 </div>
                             </li>
 
-                            <!-- Attention -->
+                            <!-- Human-Robot Interaction Section -->
                             <li class="list-group-item">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-4 col-lg-2">
-                                        <img src="./imgs/attention.png" class="img-responsive img-fluid">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-8 col-lg-10">
-                                        <h4 class="list-group-item-heading">Learning to Infer Human Attention in Daily Activities</h4>
-                                        <p class="detail">
-                                            Zhixiong Nan, 
-                                            Tianmin Shu,
-                                            <strong>Ran Gong</strong>,
-                                            Shu Wang,
-                                            Ping Wei,
-                                            Song-Chun Zhu,
-                                            Nanning Zheng<br>
-                                            <em>Pattern Recognition 2020</em>
-                                        </p>
-                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#attention-abs">Abstract</button>
-                                        <a class="btn btn-primary btn-xs" role="button" href="https://nikepupu.github.io/paper/PR_Infer.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
-                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#attention-cite"><i class="fa fa-quote-right"></i> Cite</button>
-                                    </div>
-                                </div>
-                                <div id="attention-abs" class="collapse abstract">
-                                    The first attention model in the computer science community is proposed in 1998. In the following years, human attention has been intensively studied. However, these studies mainly refer human attention as the image regions that draw the attention of a human (outside the image) who is looking at the image. In this paper, we infer the attention of a human inside a third-person view video where the human is doing a task, and define human attention as attentional objects that coincide with the task the human is doing. To infer human attention, we propose a deep neural network model that fuses both low-level human pose cue and high-level task encoding cue. Due to the lack of appropriate public datasets for studying this problem, we newly collect a video dataset in complex Virtual-Reality (VR) scenes. In the experiments, we widely compare our method with three other methods on this VR dataset. In addition, we re-annotate a public real dataset and conduct the extensional experiments on this real dataset. The experiment results validate the effectiveness of our method.
-                                </div>
-                                <div id="attention-cite" class="collapse abstract">
-                                    <pre class="citation" align="left">
-@article{nan2020learning,
-    title={Learning to infer human attention in daily activities},
-    author={Nan, Zhixiong and Shu, Tianmin and Gong, Ran and Wang, Shu and Wei, Ping and Zhu, Song-Chun and Zheng, Nanning},
-    journal={Pattern Recognition},
-    volume={103},
-    pages={107314},
-    year={2020},
-    publisher={Elsevier}
-}
-                                    </pre>
-                                </div>
+                                <h3 class="research-area">Human-Robot Interaction</h3>
                             </li>
-
-                            <!-- XCooking -->
+                            <!-- XCooking (2020) -->
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-lg-2">
@@ -642,39 +726,42 @@
                                 </div>
                             </li>
 
-                            <!-- VRKitchen -->
+                            <!-- Attention (2020) -->
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-lg-2">
-                                        <img src="./imgs/dish_fluent_small.gif" class="img-responsive img-fluid">
+                                        <img src="./imgs/attention.png" class="img-responsive img-fluid">
                                     </div>
                                     <div class="col-xs-12 col-sm-8 col-lg-10">
-                                        <h4 class="list-group-item-heading">VRKitchen: an Interactive 3D Environment for Learning Real Life Cooking Tasks</h4>
+                                        <h4 class="list-group-item-heading">Learning to Infer Human Attention in Daily Activities</h4>
                                         <p class="detail">
-                                            <a href="https://xfgao.github.io/">Xiaofeng Gao</a>, 
+                                            Zhixiong Nan, 
+                                            Tianmin Shu,
                                             <strong>Ran Gong</strong>,
-                                            <a href="https://tshu.io">Tianmin Shu</a>,
-                                            <a href="https://xuxie1031.github.io/">Xu Xie</a>,
-                                            <a href="https://shuwang0712.github.io/">Shu Wang</a>,
-                                            <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a><br>
-                                            <em>ICML workshop on Reinforcement Learning for Real Life, 2019</em>
+                                            Shu Wang,
+                                            Ping Wei,
+                                            Song-Chun Zhu,
+                                            Nanning Zheng<br>
+                                            <em>Pattern Recognition 2020</em>
                                         </p>
-                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#kitchen-abs">Abstract</button>
-                                        <a class="btn btn-primary btn-xs" role="button" href="https://xfgao.github.io/paper/Arxiv2019_VRKitchen.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
-                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#kitchen-cite"><i class="fa fa-quote-right"></i> Cite</button>
-                                        <a class="btn btn-warning btn-xs" role="button" href="https://sites.google.com/view/vr-kitchen/"><i class="fa fa-globe"></i> Website</a> 
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#attention-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://nikepupu.github.io/paper/PR_Infer.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#attention-cite"><i class="fa fa-quote-right"></i> Cite</button>
                                     </div>
                                 </div>
-                                <div id="kitchen-abs" class="collapse abstract">
-                                    One of the main challenges of applying reinforcement learning to real world applications is the lack of realistic and standardized environments for training and testing AI agents. In this work, we design and implement a virtual reality (VR) system, VRKitchen, with integrated functions which i) enable embodied agents to perform real life cooking tasks involving a wide range of object manipulations and state changes, and ii) allow human teachers to provide demonstrations for training agents. We also provide standardized evaluation benchmarks and data collection tools to facilitate a broad use in research on learning real life tasks. Video demos, code, and data will be available on the project website: sites.google.com/view/vr-kitchen.
+                                <div id="attention-abs" class="collapse abstract">
+                                    The first attention model in the computer science community is proposed in 1998. In the following years, human attention has been intensively studied. However, these studies mainly refer human attention as the image regions that draw the attention of a human (outside the image) who is looking at the image. In this paper, we infer the attention of a human inside a third-person view video where the human is doing a task, and define human attention as attentional objects that coincide with the task the human is doing. To infer human attention, we propose a deep neural network model that fuses both low-level human pose cue and high-level task encoding cue. Due to the lack of appropriate public datasets for studying this problem, we newly collect a video dataset in complex Virtual-Reality (VR) scenes. In the experiments, we widely compare our method with three other methods on this VR dataset. In addition, we re-annotate a public real dataset and conduct the extensional experiments on this real dataset. The experiment results validate the effectiveness of our method.
                                 </div>
-                                <div id="kitchen-cite" class="collapse abstract">
+                                <div id="attention-cite" class="collapse abstract">
                                     <pre class="citation" align="left">
-@article{gao2019vrkitchen,
-    title={Vrkitchen: an interactive 3d virtual environment for task-oriented learning},
-    author={Gao, Xiaofeng and Gong, Ran and Shu, Tianmin and Xie, Xu and Wang, Shu and Zhu, Song-Chun},
-    journal={arXiv preprint arXiv:1903.05757},
-    year={2019}
+@article{nan2020learning,
+    title={Learning to infer human attention in daily activities},
+    author={Nan, Zhixiong and Shu, Tianmin and Gong, Ran and Wang, Shu and Wei, Ping and Zhu, Song-Chun and Zheng, Nanning},
+    journal={Pattern Recognition},
+    volume={103},
+    pages={107314},
+    year={2020},
+    publisher={Elsevier}
 }
                                     </pre>
                                 </div>
@@ -703,3 +790,4 @@
     <script src="./css/scrolling-nav.js"></script>
 </body>
 </html>
+
