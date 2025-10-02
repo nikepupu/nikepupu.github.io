@@ -216,6 +216,40 @@
                             <li class="list-group-item">
                                 <h3 class="research-area">Robotics & Embodied AI</h3>
                             </li>
+                            <!-- Data-Efficient Multitask DAgger (2025) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <img src="./imgs/multi-task-dagger.png" class="img-responsive img-fluid">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">Data-Efficient Multitask DAgger</h4>
+                                        <p class="detail">
+                                            Haotian Fu, <strong>Ran Gong</strong>, Xiaohan Zhang, Maria Vittoria Minniti, Jigarkumar Patel, Karl Schmeckpeper<br>
+                                            <em>arXiv preprint, 2025</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#dagger-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://arxiv.org/abs/2509.25466"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#dagger-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                    </div>
+                                </div>
+                                <div id="dagger-abs" class="collapse abstract">
+                                    Generalist robot policies that can perform many tasks typically require extensive expert data or simulations for training. In this work, we propose a novel Data-Efficient multitask DAgger framework that distills a single multitask policy from multiple task-specific expert policies. Our approach significantly increases the overall task success rate by actively focusing on tasks where the multitask policy underperforms. The core of our method is a performance-aware scheduling strategy that tracks how much each task's learning process benefits from the amount of data, using a Kalman filter-based estimator to robustly decide how to allocate additional demonstrations across tasks. We validate our approach on MetaWorld, as well as a suite of diverse drawer-opening tasks in IsaacLab. The resulting policy attains high performance across all tasks while using substantially fewer expert demonstrations, and the visual policy learned with our method in simulation shows better performance than naive DAgger and Behavior Cloning when transferring zero-shot to a real robot without using real data.
+                                </div>
+                                <div id="dagger-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@misc{fu2025dataefficient,
+    title={Data-Efficient Multitask DAgger},
+    author={Fu, Haotian and Gong, Ran and Zhang, Xiaohan and Minniti, Maria Vittoria and Patel, Jigarkumar and Schmeckpeper, Karl},
+    year={2025},
+    eprint={2509.25466},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
                             <!-- RoboVerse (2025) -->
                             <li class="list-group-item">
                                 <div class="row">
