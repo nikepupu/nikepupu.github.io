@@ -92,6 +92,22 @@ html {
     padding: 20px;
 }
 
+/* Publication Teaser Images - 2:1 aspect ratio container like Jinghuan's site */
+.list-group-item .col-xs-12.col-sm-4.col-lg-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-group-item .col-xs-12.col-sm-4.col-lg-2 img {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 2 / 1;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
 .list-group-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);

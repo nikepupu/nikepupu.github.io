@@ -1,0 +1,154 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fontawesome}
+
+% Page setup
+\geometry{margin=1in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Custom colors
+\definecolor{primary}{RGB}{44, 62, 80}
+\definecolor{secondary}{RGB}{52, 152, 219}
+
+% Title formatting
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}{}[\titlerule]
+
+% Custom commands
+\newcommand{\entry}[4]{
+  \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill #4 \\
+  \vspace{0.5em}
+}
+
+\newcommand{\publication}[4]{
+  \textbf{#1} \\
+  #2 \\
+  \textit{#3} \hfill #4 \\
+  \vspace{0.5em}
+}
+
+\begin{document}
+
+\begin{center}
+{\Huge\bfseries Ran (Steven) Gong} \\[0.5em]
+{\large Research Scientist} \\[1em]
+
+\begin{tabular}{ll}
+\faEnvelope\ \href{mailto:rgong@rai-inst.com}{rgong at rai-inst dot com} & 
+\faGlobe\ \href{https://nikepupu.github.io}{https://nikepupu.github.io} \\
+\faMapMarker\ 145 Broadway, Cambridge, MA 02142 & 
+\faPhone\ (530) 746-1927 \\
+\end{tabular}
+\end{center}
+
+\section*{Research Interests}
+\begin{itemize}[leftmargin=*]
+\item Embodied AI and Robotics
+\item Foundation Models for Robotics
+\item Large-Scale Simulation
+\item Sim2Real Transfer
+\item Real2Sim Learning
+\end{itemize}
+
+\section*{Education}
+\entry{Ph.D. in Computer Science}{06/2024}{University of California, Los Angeles}{Advisor: Song-Chun Zhu}
+\entry{M.S. in Computer Science}{12/2019}{University of California, Los Angeles}{Advisor: Song-Chun Zhu}
+\entry{B.S. in Computer Science and Engineering}{06/2018}{University of California, Los Angeles}{}
+
+\section*{Employment}
+\entry{Research Scientist}{06/2024 - Present}{Boston Dynamics AI Institute}{}
+
+\section*{Experience}
+\entry{Research Intern}{04/2023 - 02/2024}{Microsoft Research, Redmond, WA}{Mentor: Jianfeng Gao}
+\entry{Applied Scientist Intern}{09/2022 - 03/2023}{Amazon Alexa AI, Manhattan Beach, CA}{Mentor: Gaurav Sukhatme}
+\entry{Applied Scientist Intern}{06/2021 - 09/2021}{Amazon Alexa AI, Manhattan Beach, CA}{Mentor: Gaurav Sukhatme}
+
+\section*{Publications}
+(* indicates equal contribution)
+
+\subsection*{Preprints \& Under Review}
+\publication{An interactive agent foundation model}{Z. Durante*, B. Sarkar*, R. Gong*, R. Taori, Y. Noda, P. Tang, E. Adeli, S. K. Lakshmikanth, K. Schulman, A. Milstein, D. Terzopoulos, A. Famoti, N. Kuno, A. Llorens, H. Vo, K. Ikeuchi, F. Li, J. Gao, N. Wake, Q. Huang}{arXiv:2402.05929}{2024}
+
+\subsection*{Peer-reviewed Journal Articles}
+\publication{LEMMA: Learning Language-Conditioned Multi-Robot Manipulation}{R. Gong, X. Gao, Q. Gao, S. Shakiah, G. Thattai, G. S. Sukhatme}{IEEE Robotics and Automation Letters (RA-L)}{2023}
+\publication{DialFRED: Dialogue-Enabled Agents for Embodied Instruction Following}{X. Gao, Q. Gao, R. Gong, K. Lin, G. Thattai, G. S. Sukhatme}{IEEE Robotics and Automation Letters (RA-L)}{2022}
+\publication{Learning to Infer Human Attention in Daily Activities}{Z. Nan, T. Shu, R. Gong, S. Wang, P. Wei, S.-C Zhu, and N Zheng}{Pattern Recognition}{2020}
+
+\subsection*{Peer-reviewed Conference Papers}
+\publication{MindAgent: Emerging Gaming Interaction}{R. Gong*, Q. Huang*, X. Ma*, H. Vo, Z. Durante, Y. Noda, Z. Zheng, D. Terzopoulos, F. Li, J. Gao}{NAACL Findings}{2024}
+\publication{ARNOLD: A Benchmark for Language-Grounded Task Learning With Continuous States in Realistic 3D Scenes}{R. Gong*, J. Huang*, Y. Zhao, H. Geng, X. Gao, Q. Wu, W. Ai, Z. Zhou, D. Terzopoulos, S.-C. Zhu, B. Jia, S. Huang}{ICCV}{2023}
+\publication{SMART: A Situation Model for Algebra Story Problems via Attributed Grammar}{Y. Hong, Q. Li, R. Gong, D. Ciao, S. Huang, S.-C. Zhu}{AAAI}{2021}
+\publication{Inter-GPS: Interpretable Geometry Problem Solving with Formal Language and Symbolic Reasoning}{P. Lu*, R. Gong*, S. Jiang*, L. Qiu, S. Huang, X. Liang, S.-C. Zhu}{ACL}{2021}
+\publication{Joint Mind Modeling for Explanation Generation in Complex Human-Robot Collaborative Tasks}{X. Gao*, R. Gong*, Y. Zhao, S. Wang, T. Shu, and S.-C. Zhu}{RO-MAN}{2020}
+
+\subsection*{Peer-reviewed Workshop Papers}
+\publication{VRKitchen: an Interactive 3D Environment for Learning Real Life Cooking Tasks}{X. Gao, R. Gong, T. Shu, X. Xie, S. Wang, and S.-C. Zhu}{ICML Workshop}{2019}
+
+\section*{Media Coverage}
+\begin{itemize}[leftmargin=*]
+\item "VRKitchen: An interactive virtual environment to train and test AI agents." Tech Xplore. Mar. 27, 2019
+\end{itemize}
+
+\section*{Patent}
+\begin{itemize}[leftmargin=*]
+\item Automatic problem solving method and system for plane geometry (CN111666924A)
+\end{itemize}
+
+\section*{Professional Service}
+\subsection*{Conference Reviewer}
+\begin{itemize}[leftmargin=*]
+\item ECCV (2024)
+\item NeurIPS (2022-2024)
+\item IROS (2024)
+\item RO-MAN (2024)
+\item ISRR (2022)
+\item ACL 2024 Workshop ALVR
+\item ECCV 2024 Workshop on Multimodal Agents
+\item CVPR 2025
+\item ICCV 2025
+\end{itemize}
+
+\subsection*{Journal Reviewer}
+\begin{itemize}[leftmargin=*]
+\item ACM Transactions on Multimedia Computing, Communications, and Applications (ACM TOMM)
+\item IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+\end{itemize}
+
+\subsection*{Workshop \& Tutorial Organizers}
+\begin{itemize}[leftmargin=*]
+\item CVPR 2024 Tutorial on Generalist Agent AI
+\item CVPR 2024 Embodied AI Workshop
+\item ECCV 2024 Workshop on Multimodal Agents
+\item CVPR 2025 Embodied AI Workshop
+\end{itemize}
+
+\section*{Teaching}
+\entry{CS M152A: Digital Design Lab}{Spring 2024}{UCLA}{Teaching Assistant}
+\entry{CS130: Software Engineering}{Fall 2021, Winter 2022, Spring 2022, Spring 2023}{UCLA}{Teaching Assistant}
+\entry{CS 181: Formal Languages and Autom\ata Theory}{Spring 2021}{UCLA}{Teaching Assistant}
+\entry{CS 32: Introduction to Computer Science 2}{Winter 2021}{UCLA}{Teaching Assistant}
+
+\section*{Mentoring}
+\subsection*{At UCLA}
+\subsubsection*{Master's Students}
+\begin{itemize}[leftmargin=*]
+\item Zhi Li (2024; currently Ph.D. student in Computer Science at UCLA)
+\end{itemize}
+
+\subsubsection*{Undergraduate Students}
+\begin{itemize}[leftmargin=*]
+\item Wensi Ai (2022-2023; Master's in Computer Science, Stanford University)
+\item Ian Conceicao (2019-2020, Amazon)
+\item Jingwu (Frost) Zhang (2019-2020)
+\end{itemize}
+
+\end{document} 
