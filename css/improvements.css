@@ -22,7 +22,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
@@ -33,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
     background-color: var(--primary-color);
     border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     padding: 15px 0;
 }
@@ -47,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .navbar-nav>li>a {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.1rem;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -57,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .navbar-nav>li>a:hover {
     color: white;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Intro Section Improvements */
@@ -82,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro-section img {
     max-width: 250px;
     border: 5px solid white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -124,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro-section .social-links .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Section Improvements */
@@ -152,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 .list-group-item {
     border: none;
     margin-bottom: 30px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     padding: 25px;
     border-radius: 8px;
@@ -161,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .list-group-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .list-group-item-heading {
@@ -211,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Improvements */
@@ -234,16 +239,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer .text-muted {
-    color: rgba(255,255,255,0.8) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.intro-section, .about-section, .news-section, .publications-section {
+.intro-section,
+.about-section,
+.news-section,
+.publications-section {
     animation: fadeIn 0.8s ease-out;
 }
 
@@ -253,23 +268,23 @@ h1, h2, h3, h4, h5, h6 {
         padding: 100px 0 30px 0;
         text-align: center;
     }
-    
+
     .intro-section img {
         margin-bottom: 2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .navbar {
         padding: 10px 0;
     }
-    
+
     .list-group-item {
         padding: 20px;
     }
-    
+
     .btn {
         margin-bottom: 10px;
     }
@@ -304,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 .publications-list .list-group-item {
     margin-bottom: 30px;
     border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     padding: 25px;
     border-radius: 8px;
@@ -313,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .publications-list .list-group-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .publications-list .list-group-item img {
@@ -376,11 +391,11 @@ h1, h2, h3, h4, h5, h6 {
     .publications-list .list-group-item {
         padding: 20px;
     }
-    
+
     .publications-list .list-group-item img {
         margin-bottom: 10px;
     }
-    
+
     .publications-list .btn {
         width: 100%;
         margin-bottom: 10px;
@@ -426,8 +441,8 @@ h1, h2, h3, h4, h5, h6 {
     .research-section {
         padding: 60px 0;
     }
-    
+
     .research-interests li {
         margin-bottom: 20px;
     }
-} 
+}

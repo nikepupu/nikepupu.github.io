@@ -155,6 +155,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <ul class="news-list">
+                        <li><strong>03/2026</strong>: Our recent work <a
+                                href="https://bdaiinstitute.github.io/expertgen/">ExpertGen</a> is out on arXiv.</li>
                         <li><strong>12/2025</strong>: Two new papers on arXiv: AnyTask (automated task and data
                             generation framework) and Sceniris (fast procedural scene generation framework).</li>
                         <li><strong>04/2025</strong>: RoboVerse is accepted by Robotics: Science and Systems (RSS) 2025.
@@ -255,6 +257,90 @@
                             <li class="list-group-item">
                                 <h3 class="research-area">Robotics & Embodied AI</h3>
                             </li>
+
+                            <!-- ExpertGen (2026) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <img src="./imgs/expertgen_teaser.png" class="img-responsive img-fluid">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">ExpertGen: Scalable Sim-to-Real Expert
+                                            Policy Learning from Imperfect Behavior Priors</h4>
+                                        <p class="detail">
+                                            Zifan Xu,
+                                            <strong>Ran Gong</strong>,
+                                            Maria Vittoria Minniti,
+                                            Ahmet Salih Gundogdu,
+                                            Eric Rosen,
+                                            Kausik Sivakumar,
+                                            Riedana Yan,
+                                            Zixing Wang,
+                                            Di Deng,
+                                            Peter Stone,
+                                            Xiaohan Zhang,
+                                            Karl Schmeckpeper<br>
+                                            <em>arXiv preprint, 2026</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse"
+                                            data-target="#expertgen-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button"
+                                            href="https://bdaiinstitute.github.io/expertgen/static/pdf/RSS_2026_ExpertGen.pdf"><i
+                                                class="fa fa-file-pdf-o"></i> PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse"
+                                            data-target="#expertgen-cite"><i class="fa fa-quote-right"></i>
+                                            Cite</button>
+                                        <a class="btn btn-warning btn-xs" role="button"
+                                            href="https://bdaiinstitute.github.io/expertgen/"><i
+                                                class="fa fa-globe"></i>
+                                            Website</a>
+                                    </div>
+                                </div>
+                                <div id="expertgen-abs" class="collapse abstract">
+                                    Learning generalizable and robust behavior cloning policies requires large volumes
+                                    of
+                                    high-quality robotics data. While human demonstrations (e.g., through teleoperation)
+                                    serve
+                                    as the standard source for expert behaviors, acquiring such data at scale in the
+                                    real world
+                                    is prohibitively expensive. This paper introduces ExpertGen, a framework that
+                                    automates
+                                    expert policy learning in simulation to enable scalable sim-to-real transfer.
+                                    ExpertGen
+                                    first initializes a behavior prior using a diffusion policy trained on imperfect
+                                    demonstrations, which may be synthesized by large language models or provided by
+                                    humans.
+                                    Reinforcement learning is then used to steer this prior toward high task success by
+                                    optimizing the diffusion model’s initial noise while keep original policy frozen. By
+                                    keeping the pretrained diffusion policy frozen, ExpertGen regularizes exploration to
+                                    remain
+                                    within safe, human-like behavior manifolds, while also enabling effective learning
+                                    with
+                                    only sparse rewards. Empirical evaluations on challenging manipulation benchmarks
+                                    demonstrate that ExpertGen reliably produces high-quality expert policies with no
+                                    reward
+                                    engineering. On industrial assembly tasks, ExpertGen achieves a 90.5% overall
+                                    success
+                                    rate, while on long-horizon manipulation tasks it attains 85% overall success,
+                                    outperforming all baseline methods. The resulting policies exhibit dexterous control
+                                    and
+                                    remain robust across diverse initial configurations and failure states. To validate
+                                    sim-to-real transfer, the learned state-based expert policies are further distilled
+                                    into
+                                    visuomotor policies via DAgger and successfully deployed on real robotic hardware.
+                                </div>
+                                <div id="expertgen-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@article{xu2026expertgen,
+    title={ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors},
+    author={Xu, Zifan and Gong, Ran and Minniti, Maria Vittoria and Gundogdu, Ahmet Salih and Rosen, Eric and Sivakumar, Kausik and Yan, Riedana and Wang, Zixing and Deng, Di and Stone, Peter and Zhang, Xiaohan and Schmeckpeper, Karl},
+    journal={arXiv preprint arXiv:2603.15956},
+    year={2026}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
                             <!-- AnyTask (2025) -->
                             <li class="list-group-item">
                                 <div class="row">
