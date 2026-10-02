@@ -78,11 +78,7 @@
                 </div>
                 <div class="col-md-8">
                     <h1>Ran (Steven) Gong</h1>
-                    <p class="lead">Research Scientist at The Robotics and AI Institute</p>
-                    <address>
-                        <i class="fa fa-map-marker"></i> 145 Broadway<br>
-                        Cambridge, MA, 02142
-                    </address>
+                    <p class="lead">Researcher at <a href="https://research.nvidia.com/labs/gear/">NVIDIA GEAR</a></p>
                     <p><i class="fa fa-envelope"></i> nikepupu9 at gmail dot com</p>
                     <div class="social-links">
                         <a href="https://scholar.google.com/citations?user=ApkezJ0AAAAJ&hl=en&authuser=1"
@@ -101,9 +97,10 @@
             <h2 class="section-title">About</h2>
             <div class="row">
                 <div class="col-md-12">
-                    <p>I am a Research Scientist at <a href="https://theaiinstitute.com/" target="_blank">The Robotics
-                            and AI Institute</a>, where I focus on advancing the frontiers of artificial intelligence
-                        and robotics. I earned my Ph.D. from the University of California, Los Angeles, under the
+                    <p>I am a Researcher at <a href="https://research.nvidia.com/labs/gear/" target="_blank">NVIDIA
+                            GEAR (Generalist Embodied Agent Research)</a>, where I focus on advancing the frontiers of
+                        artificial intelligence and robotics. Previously, I was a Researcher at
+                        <a href="https://theaiinstitute.com/" target="_blank">The Robotics and AI Institute</a>. I earned my Ph.D. from the University of California, Los Angeles, under the
                         supervision of <a href="https://web.cs.ucla.edu/~dt/" target="_blank">Professor Demetri
                             Terzopoulos</a> and Professor Song-chun Zhu. My research expertise spans the
                         interdisciplinary domains of Robotics, Computer Vision, Computer Graphics, and Machine Learning,
@@ -155,6 +152,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <ul class="news-list">
+                        <li><strong>09/2026</strong>: <a href="https://bdaiinstitute.github.io/expertgen/">ExpertGen</a>
+                            is accepted by CoRL 2026.</li>
+                        <li><strong>06/2026</strong>: <a href="https://arxiv.org/abs/2609.33982">Test-Time Spatial
+                            Reasoning for Robot Manipulation Using Generative Real-to-Sim</a> is accepted by IROS 2026.</li>
                         <li><strong>03/2026</strong>: Our recent work <a
                                 href="https://bdaiinstitute.github.io/expertgen/">ExpertGen</a> is out on arXiv.</li>
                         <li><strong>12/2025</strong>: Two new papers on arXiv: AnyTask (automated task and data
@@ -251,11 +252,142 @@
                 <div class="col-md-12">
                     <div class="publications-list">
                         <ul class="list-group">
-                            (* indicates equal contribution)
+                            (* indicates equal contribution; † indicates corresponding author)
 
                             <!-- Robotics & Embodied AI Section -->
                             <li class="list-group-item">
                                 <h3 class="research-area">Robotics & Embodied AI</h3>
+                            </li>
+
+                            <!-- Simify (IROS 2026) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <!-- Figure 1 source: https://arxiv.org/html/2609.33982v1/new_simify_teaser.png -->
+                                        <img src="./imgs/simify_teaser.png" class="img-responsive img-fluid"
+                                            alt="Simify robot rearrangement examples" loading="lazy">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">Test-Time Spatial Reasoning for Robot
+                                            Manipulation Using Generative Real-to-Sim</h4>
+                                        <p class="detail">
+                                            Ivan Kapelyukh, Yafei Hu, <strong>Ran Gong</strong>, Brandon May,
+                                            Tushar Kusnur, Laura Herlant, Karl Schmeckpeper, Edward Johns,
+                                            Xiaohan Zhang<br>
+                                            <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse"
+                                            data-target="#simify-summary" aria-expanded="false"
+                                            aria-controls="simify-summary">Summary</button>
+                                        <a class="btn btn-primary btn-xs" role="button"
+                                            href="https://arxiv.org/abs/2609.33982"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse"
+                                            data-target="#simify-cite" aria-expanded="false"
+                                            aria-controls="simify-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                    </div>
+                                </div>
+                                <div id="simify-summary" class="collapse abstract">
+                                    Simify reconstructs a scene from a single RGB-D image and uses parallel physics
+                                    simulations to reason about object arrangements at test time. An evolutionary
+                                    search selects arrangements that satisfy task rewards without additional training.
+                                    Real-robot experiments demonstrate rearrangement of previously unseen objects and
+                                    show the importance of accurate geometry for sim-to-real transfer.
+                                </div>
+                                <div id="simify-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@inproceedings{kapelyukh2026simify,
+    title={Test-Time Spatial Reasoning for Robot Manipulation Using Generative Real-to-Sim},
+    author={Kapelyukh, Ivan and Hu, Yafei and Gong, Ran and May, Brandon and Kusnur, Tushar and Herlant, Laura and Schmeckpeper, Karl and Johns, Edward and Zhang, Xiaohan},
+    booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+    year={2026},
+    url={https://arxiv.org/abs/2609.33982}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
+                            <!-- SUN: Agentic Robot Policy Learning with Persistent Task Programs (2026) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <!-- Figure 1 source: https://arxiv.org/html/2608.31167v2/figures/chase_sun.png -->
+                                        <img src="./imgs/sun_teaser.png" class="img-responsive img-fluid"
+                                            alt="SUN task programs, policy learning, and real-robot demonstrations" loading="lazy">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">SUN: Agentic Robot Policy Learning with Persistent Task Programs</h4>
+                                        <p class="detail">
+                                            Weiqi Wang, Zhi Li, Yudong Lei, David Martinez, Xiaofeng Gao, Yuxin Jiang, Chenfanfu Jiang, Yingnian Wu<sup title="Shared corresponding author">†</sup>, Demetri Terzopoulos<sup title="Shared corresponding author">†</sup>, <strong>Ran Gong<sup title="Shared corresponding author">†</sup></strong><br>
+                                            <em>arXiv preprint, 2026</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse"
+                                            data-target="#sun-summary" aria-expanded="false"
+                                            aria-controls="sun-summary">Summary</button>
+                                        <a class="btn btn-primary btn-xs" role="button"
+                                            href="https://arxiv.org/abs/2608.31167"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse"
+                                            data-target="#sun-cite" aria-expanded="false"
+                                            aria-controls="sun-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                    </div>
+                                </div>
+                                <div id="sun-summary" class="collapse abstract">
+                                    SUN represents manipulation tasks as reusable programs that connect control objectives, success checks, and learning rewards. Its Kuafu system uses a foundation-model agent to prepare scenes, refine programs, and guide policy training. Experiments across nine tasks demonstrate improved manipulation performance and zero-shot transfer to Franka and Kinova robots.
+                                </div>
+                                <div id="sun-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@misc{wang2026sun,
+    title={SUN: Agentic Robot Policy Learning with Persistent Task Programs},
+    author={Wang, Weiqi and Li, Zhi and Lei, Yudong and Martinez, David and Gao, Xiaofeng and Jiang, Yuxin and Jiang, Chenfanfu and Wu, Yingnian and Terzopoulos, Demetri and Gong, Ran},
+    year={2026},
+    eprint={2608.31167},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2608.31167}
+}
+                                    </pre>
+                                </div>
+                            </li>
+
+                            <!-- Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors (2026) -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-2">
+                                        <!-- Figure 1 source: https://arxiv.org/html/2606.31101v1/title_1.jpg -->
+                                        <img src="./imgs/world_action_sim2real_teaser.jpg" class="img-responsive img-fluid"
+                                            alt="World-action model manipulation in simulation and the real world" loading="lazy">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors</h4>
+                                        <p class="detail">
+                                            Zixing Wang, Kausik Sivakumar, Jinghuan Shang, Yafei Hu, Zhaoming Xie, <strong>Ran Gong<sup title="Shared corresponding author">†</sup></strong>, Xiaohan Zhang<sup title="Shared corresponding author">†</sup>, Karl Schmeckpeper<sup title="Shared corresponding author">†</sup><br>
+                                            <em>CVPR Embodied AI Workshop, 2026</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse"
+                                            data-target="#world-action-sim2real-summary" aria-expanded="false"
+                                            aria-controls="world-action-sim2real-summary">Summary</button>
+                                        <a class="btn btn-primary btn-xs" role="button"
+                                            href="https://arxiv.org/abs/2606.31101"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse"
+                                            data-target="#world-action-sim2real-cite" aria-expanded="false"
+                                            aria-controls="world-action-sim2real-cite"><i class="fa fa-quote-right"></i> Cite</button>
+                                    </div>
+                                </div>
+                                <div id="world-action-sim2real-summary" class="collapse abstract">
+                                    This work investigates transferring world-action models from simulation to real manipulation using synthetic demonstrations. It combines Cosmos Policy with domain-randomized simulation and AnyTask-generated data. With approximately 800 synthetic demonstrations per task and no real demonstrations, the resulting policy achieves 35% average success on a physical Franka robot across three manipulation tasks.
+                                </div>
+                                <div id="world-action-sim2real-cite" class="collapse abstract">
+                                    <pre class="citation" align="left">
+@misc{wang2026worldactionsim2real,
+    title={Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors},
+    author={Wang, Zixing and Sivakumar, Kausik and Shang, Jinghuan and Hu, Yafei and Xie, Zhaoming and Gong, Ran and Zhang, Xiaohan and Schmeckpeper, Karl},
+    year={2026},
+    eprint={2606.31101},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2606.31101}
+}
+                                    </pre>
+                                </div>
                             </li>
 
                             <!-- ExpertGen (2026) -->
@@ -280,7 +412,7 @@
                                             Peter Stone,
                                             Xiaohan Zhang,
                                             Karl Schmeckpeper<br>
-                                            <em>arXiv preprint, 2026</em>
+                                            <em>Conference on Robot Learning (CoRL), 2026</em>
                                         </p>
                                         <button class="btn btn-success btn-xs" data-toggle="collapse"
                                             data-target="#expertgen-abs">Abstract</button>
@@ -331,10 +463,11 @@
                                 </div>
                                 <div id="expertgen-cite" class="collapse abstract">
                                     <pre class="citation" align="left">
-@article{xu2026expertgen,
+@inproceedings{xu2026expertgen,
     title={ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors},
     author={Xu, Zifan and Gong, Ran and Minniti, Maria Vittoria and Gundogdu, Ahmet Salih and Rosen, Eric and Sivakumar, Kausik and Yan, Riedana and Wang, Zixing and Deng, Di and Stone, Peter and Zhang, Xiaohan and Schmeckpeper, Karl},
-    journal={arXiv preprint arXiv:2603.15956},
+    booktitle={Conference on Robot Learning (CoRL)},
+    url={https://arxiv.org/abs/2603.15956},
     year={2026}
 }
                                     </pre>
